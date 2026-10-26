@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+
 public class Sort {
 
     public static void SelectionSort(ArrayList<Integer> numbers) {
@@ -125,13 +125,17 @@ public class Sort {
 
     // Partition function
     private static int partition(ArrayList<Integer> list, int low, int high) {
+
         int pivot = list.get(high);
         int i = low - 1;
-
+        System.out.println("Partition: " + low + " " + high + " " + pivot + " " + list);
         for (int j = low; j < high; j++) {
+            System.out.println("           " + low + " " + high + " " + pivot + " " + list);
             if (list.get(j) <= pivot) {
+
                 i++;
                 // Swap list[i] and list[j]
+                System.out.println("           " + list.get(i) + " " + list.get(j));
                 int temp = list.get(i);
                 list.set(i, list.get(j));
                 list.set(j, temp);

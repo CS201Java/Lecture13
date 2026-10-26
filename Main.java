@@ -1,6 +1,6 @@
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -69,7 +69,7 @@ public class Main {
         
         System.out.println("\nEXAMPLE 7: QUICK SORT");
         randomNumbers.clear();
-        for (int i = 0; i < 15; i++){
+        for (int i = 0; i < 10; i++){
             int randomNumber = random.nextInt(100);
             randomNumbers.add(randomNumber);
         }
@@ -77,30 +77,6 @@ public class Main {
         Sort.QuickSort(randomNumbers, 0, randomNumbers.size()-1);
         System.out.println("The sorted list is:   " + randomNumbers);    
         
-        /*
-        //These are additional sorts you can review if you would like
-
-        System.out.println("\nEXAMPLE 8: BUCKET SORT");
-        randomNumbers.clear();
-        for (int i = 0; i < 15; i++){
-            int randomNumber = random.nextInt(100);
-            randomNumbers.add(randomNumber);
-        }
-        System.out.println("The original list is: " + randomNumbers);
-        OtherSorts.BucketSort(randomNumbers, 5);
-        System.out.println("The sorted list is:   " + randomNumbers);
- 
-
-        System.out.println("\nEXAMPLE 9: RADIX SORT");
-        randomNumbers.clear();
-        for (int i = 0; i < 15; i++){
-            int randomNumber = random.nextInt(100);   //0-99
-            randomNumbers.add(randomNumber);
-        }
-        System.out.println("The original list is: " + randomNumbers);
-        OtherSorts.RadixSort(randomNumbers, 99);
-        System.out.println("The sorted list is:   " + randomNumbers);
-        */
 
     }
 
